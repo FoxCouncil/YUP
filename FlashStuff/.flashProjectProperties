@@ -1,0 +1,23 @@
+<projectDescription>
+  <id>1266054025952</id>
+  <name>YUPplayer</name>
+  <asVersion>0</asVersion>
+  <boundTemplate>file:///C|/Users/Fox/AppData/Local/Adobe/Flash CS4/en/Configuration/Project/templates/boundClass_as3.as</boundTemplate>
+  <classTemplate>file:///C|/Users/Fox/AppData/Local/Adobe/Flash CS4/en/Configuration/Project/templates/standardClass_as3.as</classTemplate>
+  <classPath>.</classPath>
+  <defaultApp>file:///C|/Users/Fox/Documents/Visual Studio 2008/Projects/YUP/FlashStuff/YUPplayer.fla</defaultApp>
+  <rootURI>file:///C|/Users/Fox/Documents/Visual%20Studio%202008/Projects/YUP/FlashStuff/</rootURI>
+  <flexSDK/>
+  <sources editable="false"/>
+  <libraries editable="false"/>
+  <externalLibraries editable="false"/>
+  <compileList editable="false">
+    <uri label="YUPplayer.fla">file:///C|/Users/Fox/Documents/Visual Studio 2008/Projects/YUP/FlashStuff/YUPplayer.fla</uri>
+  </compileList>
+  <recentFiles editable="false">
+    <uri label="YUPplayer.as">file:///C|/Users/Fox/Documents/Visual Studio 2008/Projects/YUP/FlashStuff/YUPplayer.as</uri>
+    <uri label="YUPplayer.fla">file:///C|/Users/Fox/Documents/Visual Studio 2008/Projects/YUP/FlashStuff/YUPplayer.fla</uri>
+    <uri label="FoxNCManager.as">file:///C|/Users/Fox/Documents/Visual Studio 2008/Projects/YUP/FlashStuff/FoxNCManager.as</uri>
+  </recentFiles>
+  <locations editable="false"/>
+</projectDescription>

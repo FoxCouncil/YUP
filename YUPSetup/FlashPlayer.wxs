@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="3abcc546-5722-4786-96ce-7383147529ab" Codepage="1252" Language="1033" Manufacturer="Adobe Systems, Inc." Name="Adobe Flash Player 10 ActiveX" UpgradeCode="{42463807-970B-4257-BC95-5C348D61DF1C}" Version="10.0.12.36">
+        <Package Comments="Contact:  Your local administrator" Description="Adobe Flash Player" InstallerVersion="110" Keywords="Installer,MSI,Database" Languages="1033" Manufacturer="Adobe Systems, Inc." Platform="x86" />
+
+        
+
+
+
+        <Feature Id="FlashPlayerAXInstaller" ConfigurableDirectory="INSTALLDIR" Description="Install Adobe Flash Player" Level="1" Title="Adobe Flash Player 10">
+            
+        </Feature>
+        <Icon Id="ARPPRODUCTICON.exe" SourceFile="C:\Program Files\Windows Installer XML v3\bin\Flash\Icon\ARPPRODUCTICON.exe" />
+        <Media Id="2" Cabinet="Data1.cab" DiskPrompt="1" EmbedCab="yes" VolumeLabel="DISK1" />
+        <Property Id="DiskPrompt" Value="[1]" />
+        <Property Id="ISCHECKFORPRODUCTUPDATES" Value="1" />
+        <Property Id="ApplicationUsers" Value="AllUsers" />
+        <Property Id="AgreeToLicense" Value="No" />
+        <Property Id="_IsMaintenance" Value="Change" />
+        <Property Id="RestartManagerOption" Value="CloseRestart" />
+        <Property Id="IS_SQLSERVER_USERNAME" Value="sa" />
+        <Property Id="IS_SQLSERVER_AUTHENTICATION" Value="0" />
+        <Property Id="SetupType" Value="Typical" />
+        <Property Id="_IsSetupTypeMin" Value="Typical" />
+        <Property Id="Display_IsBitmapDlg" Value="1" />
+        <Property Id="ALLUSERS" Value="1" />
+        <Property Id="ARPHELPLINK" Value="http://www.adobe.com/go/flashplayer_support/" />
+        <Property Id="ARPNOMODIFY" Value="1" />
+        <Property Id="ARPPRODUCTICON" Value="ARPPRODUCTICON.exe" />
+        <Property Id="ARPURLINFOABOUT" Value="http://www.adobe.com" />
+        <Property Id="DWUSINTERVAL" Value="30" />
+        <Property Id="DWUSLINK" Value="CECCA75FE9CBA098D9ACE02FFEDB978FBEECA78F69BBE0B8CE8BA7CFE97CF0AFCEBCE08FD9AC" />
+        <Property Id="DefaultUIFont" Value="Tahoma8" />
+        <Property Id="DialogCaption" Value="InstallShield for Windows Installer" />
+        <Property Id="DisplayNameCustom" Value="Custom" />
+        <Property Id="DisplayNameMinimal" Value="Minimal" />
+        <Property Id="DisplayNameTypical" Value="Typical" />
+        <Property Id="ErrorDialog" Value="SetupError" />
+        <Property Id="INSTALLLEVEL" Value="100" />
+        <Property Id="ISSCRIPT_VERSION_MISSING" Value="The InstallScript engine is missing from this machine.  If available, please run ISScript.msi, or contact your support personnel for further assistance." />
+        <Property Id="ISVROOT_PORT_NO" Value="0" />
+        <Property Id="IS_COMPLUS_PROGRESSTEXT_COST" Value="Costing COM+ application: [1]" />
+        <Property Id="IS_COMPLUS_PROGRESSTEXT_INSTALL" Value="Installing COM+ application: [1]" />
+        <Property Id="IS_COMPLUS_PROGRESSTEXT_UNINSTALL" Value="Uninstalling COM+ application: [1]" />
+        <Property Id="IS_PROGMSG_XML_COSTING" Value="Costing XML files..." />
+        <Property Id="IS_PROGMSG_XML_CREATE_FILE" Value="Creating XML file %s..." />
+        <Property Id="IS_PROGMSG_XML_FILES" Value="Performing XML file changes..." />
+        <Property Id="IS_PROGMSG_XML_REMOVE_FILE" Value="Removing XML file %s..." />
+        <Property Id="IS_PROGMSG_XML_ROLLBACK_FILES" Value="Rolling back XML file changes..." />
+        <Property Id="IS_PROGMSG_XML_UPDATE_FILE" Value="Updating XML file %s..." />
+        <Property Id="InstallChoice" Value="AR" />
+        <Property Id="MsiLogging" Value="voicewarmupx" />
+        <Property Id="NewProperty2" Value="0" />
+        <Property Id="NewProperty3" Value="0" />
+        <Property Id="PIDTemplate" Value="12345&lt;###-%%%%%%%&gt;@@@@@" />
+        <Property Id="PROGMSG_IIS_CREATEAPPPOOL" Value="Creating application pool %s" />
+        <Property Id="PROGMSG_IIS_CREATEAPPPOOLS" Value="Creating application Pools..." />
+        <Property Id="PROGMSG_IIS_CREATEVROOT" Value="Creating IIS virtual directory %s" />
+        <Property Id="PROGMSG_IIS_CREATEVROOTS" Value="Creating IIS virtual directories..." />
+        <Property Id="PROGMSG_IIS_CREATEWEBSERVICEEXTENSION" Value="Creating web service extension" />
+        <Property Id="PROGMSG_IIS_CREATEWEBSERVICEEXTENSIONS" Value="Creating web service extensions..." />
+        <Property Id="PROGMSG_IIS_EXTRACT" Value="Extracting information for IIS virtual directories..." />
+        <Property Id="PROGMSG_IIS_EXTRACTDONE" Value="Extracted information for IIS virtual directories..." />
+        <Property Id="PROGMSG_IIS_REMOVEAPPPOOL" Value="Removing application pool" />
+        <Property Id="PROGMSG_IIS_REMOVEAPPPOOLS" Value="Removing application pools..." />
+        <Property Id="PROGMSG_IIS_REMOVESITE" Value="Removing web site at port %d" />
+        <Property Id="PROGMSG_IIS_REMOVEVROOT" Value="Removing IIS virtual directory %s" />
+        <Property Id="PROGMSG_IIS_REMOVEVROOTS" Value="Removing IIS virtual directories..." />
+        <Property Id="PROGMSG_IIS_REMOVEWEBSERVICEEXTENSION" Value="Removing web service extension" />
+        <Property Id="PROGMSG_IIS_REMOVEWEBSERVICEEXTENSIONS" Value="Removing web service extensions..." />
+        <Property Id="PROGMSG_IIS_ROLLBACKAPPPOOLS" Value="Rolling back application pools..." />
+        <Property Id="PROGMSG_IIS_ROLLBACKVROOTS" Value="Rolling back virtual directory and web site changes..." />
+        <Property Id="PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS" Value="Rolling back web service extensions..." />
+        <Property Id="ProductID" Value="none" />
+        <Property Id="ProgressType0" Value="install" />
+        <Property Id="ProgressType1" Value="Installing" />
+        <Property Id="ProgressType2" Value="installed" />
+        <Property Id="ProgressType3" Value="installs" />
+        <Property Id="RebootYesNo" Value="Yes" />
+        <Property Id="ReinstallModeText" Value="omus" />
+        <Property Id="SHOWLAUNCHPROGRAM" Value="0" />
+        <Property Id="UNINSTALLER_EXE" Value="[SystemFolder]\Macromed\Flash\uninstall_activeX.exe" />
+      
+        <Upgrade Id="{42463807-970B-4257-BC95-5C348D61DF1C}">
+            <UpgradeVersion Minimum="6.0.0.0" Maximum="10.0.12.36" Property="ISACTIONPROP1" MigrateFeatures="yes" IncludeMinimum="yes" IncludeMaximum="yes" />
+        </Upgrade>
+        <Upgrade Id="{91ACC36E-CB92-44F0-AF4E-0BACC033F7F1}">
+            <UpgradeVersion Maximum="10.0.12.36" Property="ISACTIONPROP3" MigrateFeatures="yes" IncludeMinimum="yes" />
+        </Upgrade>
+        <Upgrade Id="{ECA98E30-EB7E-47D1-B47F-B3BEC081B7D8}">
+            <UpgradeVersion Maximum="10.0.12.36" Property="ISACTIONPROP2" MigrateFeatures="yes" IncludeMinimum="yes" />
+        </Upgrade>
+        <InstallExecuteSequence>
+            <Custom Action="ISSetAllUsers" Sequence="10">Not Installed</Custom>
+            <Custom Action="SetARPINSTALLLOCATION" Sequence="1010">Not Installed</Custom>
+            <Custom Action="CallExeUninstaller" Sequence="1502">REMOVE="ALL"</Custom>
+            <Custom Action="MakePropsAvailable" Sequence="1503" />
+            <Custom Action="NewCustomAction1" Sequence="4045">Not Installed</Custom>
+            <ScheduleReboot Sequence="6410">ISSCHEDULEREBOOT</ScheduleReboot>
+            <LaunchConditions Sequence="410" />
+            <FindRelatedProducts Sequence="420">NOT ISSETUPDRIVEN</FindRelatedProducts>
+            <AppSearch Sequence="400" />
+            <CCPSearch Sequence="500">CCP_TEST</CCPSearch>
+            <RMCCPSearch Sequence="600">Not CCP_SUCCESS And CCP_TEST</RMCCPSearch>
+            <ValidateProductID Sequence="700" />
+            <CostInitialize Sequence="800" />
+            <FileCost Sequence="900" />
+            <IsolateComponents Sequence="950" />
+            <CostFinalize Sequence="1000" />
+            <SetODBCFolders Sequence="1100" />
+            <MigrateFeatureStates Sequence="1200" />
+            <InstallValidate Sequence="1400" />
+            <InstallInitialize Sequence="1501" />
+            <AllocateRegistrySpace Sequence="1550">NOT Installed</AllocateRegistrySpace>
+            <ProcessComponents Sequence="1600" />
+            <UnpublishComponents Sequence="1700" />
+            <UnpublishFeatures Sequence="1800" />
+            <StopServices Sequence="1900">VersionNT</StopServices>
+            <DeleteServices Sequence="2000">VersionNT</DeleteServices>
+            <UnregisterComPlus Sequence="2100" />
+            <SelfUnregModules Sequence="2200" />
+            <UnregisterTypeLibraries Sequence="2300" />
+            <RemoveODBC Sequence="2400" />
+            <UnregisterFonts Sequence="2500" />
+            <RemoveRegistryValues Sequence="2600" />
+            <UnregisterClassInfo Sequence="2700" />
+            <UnregisterExtensionInfo Sequence="2800" />
+            <UnregisterProgIdInfo Sequence="2900" />
+            <UnregisterMIMEInfo Sequence="3000" />
+            <RemoveIniValues Sequence="3100" />
+            <RemoveShortcuts Sequence="3200" />
+            <RemoveEnvironmentStrings Sequence="3300" />
+            <RemoveDuplicateFiles Sequence="3400" />
+            <RemoveFolders Sequence="3600" />
+            <CreateFolders Sequence="3700" />
+            <MoveFiles Sequence="3800" />
+            <InstallFiles Sequence="4000" />
+            <DuplicateFiles Sequence="4210" />
+            <PatchFiles Sequence="4090" />
+            <BindImage Sequence="4300" />
+            <CreateShortcuts Sequence="4500" />
+            <RegisterClassInfo Sequence="4600" />
+            <RegisterExtensionInfo Sequence="4700" />
+            <RegisterProgIdInfo Sequence="4800" />
+            <RegisterMIMEInfo Sequence="4900" />
+            <WriteRegistryValues Sequence="5000" />
+            <WriteIniValues Sequence="5100" />
+            <WriteEnvironmentStrings Sequence="5200" />
+            <RegisterFonts Sequence="5300" />
+            <InstallODBC Sequence="5400" />
+            <RegisterTypeLibraries Sequence="5500" />
+            <SelfRegModules Sequence="5600" />
+            <RegisterComPlus Sequence="5700" />
+            <InstallServices Sequence="5800">VersionNT</InstallServices>
+            <StartServices Sequence="5900">VersionNT</StartServices>
+            <RegisterUser Sequence="6000" />
+            <RegisterProduct Sequence="6100" />
+            <PublishComponents Sequence="6200" />
+            <PublishFeatures Sequence="6300" />
+            <PublishProduct Sequence="6400" />
+            <InstallFinalize Sequence="6600" />
+            <RemoveExistingProducts Sequence="1410" />
+        </InstallExecuteSequence>
+        <InstallUISequence>
+            <Custom Action="ISSetAllUsers" Sequence="10">Not Installed</Custom>
+            <Custom Action="setUserProfileNT" Sequence="960">VersionNT</Custom>
+            <Custom Action="SetAllUsersProfileNT" Sequence="970">VersionNT = 400</Custom>
+            <Custom Action="setAllUsersProfile2K" Sequence="980">VersionNT &gt;= 500</Custom>
+            <Show Dialog="SetupCompleteError" OnExit="error" />
+            <Show Dialog="SetupInterrupted" OnExit="cancel" />
+            <Show Dialog="SetupCompleteSuccess" OnExit="success" />
+            <Show Dialog="SetupInitialization" Sequence="420" />
+            <Show Dialog="PatchWelcome" Sequence="1205">PATCH And Not IS_MAJOR_UPGRADE</Show>
+            <Show Dialog="InstallWelcome" Sequence="1210">Not Installed And (Not PATCH Or IS_MAJOR_UPGRADE)</Show>
+            <Show Dialog="SetupResume" Sequence="1220">Installed And (RESUME Or Preselected) And Not PATCH</Show>
+            <Show Dialog="MaintenanceWelcome" Sequence="1230">Installed And Not RESUME And Not Preselected And Not PATCH</Show>
+            <Show Dialog="SetupProgress" Sequence="1240" />
+            <LaunchConditions Sequence="410" />
+            <FindRelatedProducts Sequence="430" />
+            <AppSearch Sequence="400" />
+            <CCPSearch Sequence="500">CCP_TEST</CCPSearch>
+            <RMCCPSearch Sequence="600">Not CCP_SUCCESS And CCP_TEST</RMCCPSearch>
+            <ValidateProductID Sequence="700" />
+            <CostInitialize Sequence="800" />
+            <FileCost Sequence="900" />
+            <IsolateComponents Sequence="950" />
+            <ResolveSource Sequence="990">Not Installed And Not PATCH</ResolveSource>
+            <CostFinalize Sequence="1000" />
+            <MigrateFeatureStates Sequence="1200" />
+            <ExecuteAction Sequence="1300" />
+        </InstallUISequence>
+        <AdminExecuteSequence>
+            <CostInitialize Sequence="800" />
+            <FileCost Sequence="900" />
+            <CostFinalize Sequence="1000" />
+            <InstallValidate Sequence="1400" />
+            <InstallInitialize Sequence="1500" />
+            <InstallAdminPackage Sequence="3900" />
+            <InstallFiles Sequence="4000" />
+            <InstallFinalize Sequence="6600" />
+        </AdminExecuteSequence>
+        <AdminUISequence>
+            <Show Dialog="SetupCompleteError" OnExit="error" />
+            <Show Dialog="SetupInterrupted" OnExit="cancel" />
+            <Show Dialog="SetupCompleteSuccess" OnExit="success" />
+            <Show Dialog="SetupInitialization" Sequence="50" />
+            <Show Dialog="AdminWelcome" Sequence="1010" />
+            <Show Dialog="SetupProgress" Sequence="1020" />
+            <CostInitialize Sequence="800" />
+            <FileCost Sequence="900" />
+            <CostFinalize Sequence="1000" />
+            <ExecuteAction Sequence="1300" />
+        </AdminUISequence>
+        <AdvertiseExecuteSequence>
+            <CostInitialize Sequence="800" />
+            <CostFinalize Sequence="1000" />
+            <InstallValidate Sequence="1400" />
+            <InstallInitialize Sequence="1500" />
+            <CreateShortcuts Sequence="4500" />
+            <RegisterClassInfo Sequence="4600" />
+            <RegisterExtensionInfo Sequence="4700" />
+            <RegisterMIMEInfo Sequence="4900" />
+            <RegisterProgIdInfo Sequence="4800" />
+            <PublishComponents Sequence="6200" />
+            <PublishFeatures Sequence="6300" />
+            <PublishProduct Sequence="6400" />
+            <InstallFinalize Sequence="6600" />
+        </AdvertiseExecuteSequence>
+    </Product>
+</Wix>

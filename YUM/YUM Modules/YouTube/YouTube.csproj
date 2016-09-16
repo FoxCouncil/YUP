@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YouTubeYUM</RootNamespace>
+    <AssemblyName>YouTubeYUM</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bin\Debug\YouTubeYUM.XML</DocumentationFile>
+    <DefineConstants>DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '_Final|x86' ">
+    <OutputPath>bin\_Final\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\Core\abstractentry.cs" />
+    <Compile Include="API\Core\abstractfeed.cs" />
+    <Compile Include="API\Core\asyncservice.cs" />
+    <Compile Include="API\Core\atombase.cs" />
+    <Compile Include="API\Core\atombaselink.cs" />
+    <Compile Include="API\Core\atomcategory.cs" />
+    <Compile Include="API\Core\atomcontent.cs" />
+    <Compile Include="API\Core\atomfeed.cs" />
+    <Compile Include="API\Core\atomfeedentry.cs" />
+    <Compile Include="API\Core\atomFeedgenerator.cs" />
+    <Compile Include="API\Core\atomfeedparser.cs" />
+    <Compile Include="API\Core\atomicon.cs" />
+    <Compile Include="API\Core\atomId.cs" />
+    <Compile Include="API\Core\atomlink.cs" />
+    <Compile Include="API\Core\atomlogo.cs" />
+    <Compile Include="API\Core\atomnametable.cs" />
+    <Compile Include="API\Core\atomperson.cs" />
+    <Compile Include="API\Core\atomsource.cs" />
+    <Compile Include="API\Core\atomtextconstruct.cs" />
+    <Compile Include="API\Core\atomuri.cs" />
+    <Compile Include="API\Core\authexceptions.cs" />
+    <Compile Include="API\Core\authsubutil.cs" />
+    <Compile Include="API\Core\basefeedparser.cs" />
+    <Compile Include="API\Core\basenametable.cs" />
+    <Compile Include="API\Core\collections.cs" />
+    <Compile Include="API\Core\documentquery.cs" />
+    <Compile Include="API\Core\exceptions.cs" />
+    <Compile Include="API\Core\feedconstants.cs" />
+    <Compile Include="API\Core\feedquery.cs" />
+    <Compile Include="API\Core\gauthrequest.cs" />
+    <Compile Include="API\Core\gauthsubrequest.cs" />
+    <Compile Include="API\Core\gdatabatch.cs" />
+    <Compile Include="API\Core\gzipstream.cs" />
+    <Compile Include="API\Core\HttpUtility.cs" />
+    <Compile Include="API\Core\logrequest.cs" />
+    <Compile Include="API\Core\mediaservice.cs" />
+    <Compile Include="API\Core\mediasource.cs" />
+    <Compile Include="API\Core\request.cs" />
+    <Compile Include="API\Core\rssfeedparser.cs" />
+    <Compile Include="API\Core\service.cs" />
+    <Compile Include="API\Core\serviceinterface.cs" />
+    <Compile Include="API\Core\tracing.cs" />
+    <Compile Include="API\Core\utilities.cs" />
+    <Compile Include="API\GData\appcontrol.cs" />
+    <Compile Include="API\GData\apps.cs" />
+    <Compile Include="API\GData\comments.cs" />
+    <Compile Include="API\GData\contacts.cs" />
+    <Compile Include="API\GData\entrylink.cs" />
+    <Compile Include="API\GData\enumconstruct.cs" />
+    <Compile Include="API\GData\exif.cs" />
+    <Compile Include="API\GData\extcollections.cs" />
+    <Compile Include="API\GData\extended.cs" />
+    <Compile Include="API\GData\extensionbase.cs" />
+    <Compile Include="API\GData\feedlink.cs" />
+    <Compile Include="API\GData\gdatanametable.cs" />
+    <Compile Include="API\GData\georsswhere.cs" />
+    <Compile Include="API\GData\labelcollection.cs" />
+    <Compile Include="API\GData\mailitempropertycollection.cs" />
+    <Compile Include="API\GData\mediarss.cs" />
+    <Compile Include="API\GData\originalevent.cs" />
+    <Compile Include="API\GData\ratings.cs" />
+    <Compile Include="API\GData\recurexception.cs" />
+    <Compile Include="API\GData\recurrence.cs" />
+    <Compile Include="API\GData\reminder.cs" />
+    <Compile Include="API\GData\simplecontainer.cs" />
+    <Compile Include="API\GData\simpleelement.cs" />
+    <Compile Include="API\GData\when.cs" />
+    <Compile Include="API\GData\where.cs" />
+    <Compile Include="API\GData\who.cs" />
+    <Compile Include="API\YouTube\commententry.cs" />
+    <Compile Include="API\YouTube\commentsfeed.cs" />
+    <Compile Include="API\YouTube\complaintentry.cs" />
+    <Compile Include="API\YouTube\friendsentry.cs" />
+    <Compile Include="API\YouTube\friendsfeed.cs" />
+    <Compile Include="API\YouTube\messageentry.cs" />
+    <Compile Include="API\YouTube\messagefeed.cs" />
+    <Compile Include="API\YouTube\playlistentry.cs" />
+    <Compile Include="API\YouTube\playlistfeed.cs" />
+    <Compile Include="API\YouTube\playlistsentry.cs" />
+    <Compile Include="API\YouTube\playlistsfeed.cs" />
+    <Compile Include="API\YouTube\profileentry.cs" />
+    <Compile Include="API\YouTube\profilefeed.cs" />
+    <Compile Include="API\YouTube\subscriptionentry.cs" />
+    <Compile Include="API\YouTube\subscriptionfeed.cs" />
+    <Compile Include="API\YouTube\youtubebaseentry.cs" />
+    <Compile Include="API\YouTube\youtubeentry.cs" />
+    <Compile Include="API\YouTube\youtubeextensions.cs" />
+    <Compile Include="API\YouTube\youtubefeed.cs" />
+    <Compile Include="API\YouTube\youtubequery.cs" />
+    <Compile Include="API\YouTube\youtubeservice.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="YouTube.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YouTubeFLV.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\YUM\YUM.csproj">
+      <Project>{4ACE80F2-7EF6-4762-B26E-D4529A1604A1}</Project>
+      <Name>YUM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Youtube.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "$(SolutionDir)YUP\bin\$(ConfigurationName)\Plugins\"
+copy "$(SolutionDir)YUM\YUM Modules\YouTube\bin\$(ConfigurationName)\YouTubeYUM.*" "$(SolutionDir)YUP\bin\$(ConfigurationName)\Plugins\YouTubeYUM.*"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

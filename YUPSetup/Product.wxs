@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+	<Product Id="3abcc546-5722-4786-96ce-7383147529ab" Name="YUP" Language="1033" Version="1.0.0.0" Manufacturer="Magrathean Technologies" UpgradeCode="9aa95288-1b60-4345-b698-61376ef62c69">
+		<Package InstallerVersion="200" Compressed="yes" Description="Your Ultimate Player | The player for web-based video." Comments="Includes Flash Player 10" />
+
+    <Condition Message="You are trying to install YUP on an unsupported operating system. YUP is supported on Windows 2000, Windows XP, Windows Vista and later.">(Version9X&gt;=410) Or (VersionNT&gt;=500)</Condition>
+    <Condition Message="You must have administrative privileges to install YUP. Please log on with administrative privileges and try again.">Privileged</Condition>
+    
+    <!-- Flash -->
+    <Binary Id="ISSELFREG.DLL" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\ISSELFREG.DLL" />
+    <Binary Id="NewBinary10" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary10" />
+    <Binary Id="NewBinary11" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary11" />
+    <Binary Id="NewBinary12" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary12" />
+    <Binary Id="NewBinary13" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary13" />
+    <Binary Id="NewBinary14" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary14" />
+    <Binary Id="NewBinary15" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary15" />
+    <Binary Id="NewBinary16" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary16" />
+    <Binary Id="NewBinary17" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary17" />
+    <Binary Id="NewBinary18" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary18" />
+    <Binary Id="NewBinary19" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary19" />
+    <Binary Id="NewBinary2" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary2" />
+    <Binary Id="NewBinary20" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary20" />
+    <Binary Id="NewBinary3" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary3" />
+    <Binary Id="NewBinary4" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary4" />
+    <Binary Id="NewBinary6" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary6" />
+    <Binary Id="NewBinary7" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary7" />
+    <Binary Id="NewBinary8" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary8" />
+    <Binary Id="NewBinary9" SourceFile="$(var.SolutionDir)\FlashStuff\Flash\Binary\NewBinary9" />
+
+    <CustomAction Id="CallExeUninstaller" Directory="INSTALLDIR" ExeCommand="[INSTALLDIR]uninstall_activeX.exe" Return="ignore" Execute="deferred" Impersonate="no" />
+    <CustomAction Id="NewCustomAction1" FileKey="FP_AX_MSI_INSTALLER.exe" ExeCommand="" Execute="deferred" Impersonate="no" />
+    <!-- END Flash -->
+    
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+      <!-- Flash -->
+      <Directory Id="SystemFolder" SourceName="System32">
+        <Directory Id="MACROMED" Name="Macromed">
+          <Directory Id="FLASH" Name="Flash">
+            <Directory Id="INSTALLDIR">
+              <Component Id="ISRegistryComponent" Guid="{6EF6969F-DD13-4E22-AA5B-47F75A5D7633}" KeyPath="yes" SharedDllRefCount="yes">
+                <CreateFolder Directory="INSTALLDIR" />
+                <RegistryValue Id="Registry1" Root="HKLM" Key="Software\Macromedia\FlashPlayer" Name="FlashPlayerVersion" Value="[ProductVersion]" Type="string" />
+              </Component>
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+      <Directory Id="TempFolder" SourceName="Temp">
+        <Component Id="FP_AX_MSI_INSTALLER.exe" Guid="{6962420C-65FE-4F17-8BAF-8E36FC85EF6F}" SharedDllRefCount="yes">
+          <File Id="FP_AX_MSI_INSTALLER.exe" Name="FP_AX_MSI_INSTALLER.exe" KeyPath="yes" Vital="no" DiskId="1" Source="$(var.SolutionDir)\FlashStuff\Flash\File\FP_AX_MSI_INSTALLER.exe" />
+        </Component>
+      </Directory>
+      <!-- END Flash -->
+      
+			<Directory Id="ProgramFilesFolder">
+        <Directory Id="MagratheanTechnologies" Name="Magrathean Technologies">
+				  <Directory Id="INSTALLLOCATION" Name="YUP">
+				    <Component Id="YUPCore" Guid="3fcda702-c11a-4445-8c35-30066d8c1ed7">
+
+              <File Id="YUPExecutable" Name="$(var.YUP.TargetFileName)" Source="$(var.YUP.TargetPath)" DiskId="1">
+                <netfx:NativeImage Id="ngenYUP.exe" Platform="32bit" Priority="0" AppBaseDirectory="INSTALLLOCATION"/>
+              </File>
+              <File Id="YUPYumLibrary" Name="$(var.YUM.TargetFileName)" Source="$(var.YUM.TargetPath)" DiskId="1" />
+              <File Id="AXLibrary" Name="AxInterop.ShockwaveFlashObjects.dll" Source="$(var.YUP.TargetDir)\AxInterop.ShockwaveFlashObjects.dll" DiskId="1" />
+              <File Id="InteropLibrary" Name="Interop.ShockwaveFlashObjects.dll" Source="$(var.YUP.TargetDir)\Interop.ShockwaveFlashObjects.dll" DiskId="1" />
+              <!-- <File Id="YUPSWF" Name="YUPplayer.swf" Source="$(var.YUP.TargetDir)\YUPplayer.swf" DiskId="1" /> -->
+              <File Id="SQLite" Name="System.Data.SQLite.dll" Source="C:\Program Files\SQLite.NET\bin\System.Data.SQLite.dll" DiskId="1" />
+
+              <Shortcut Id="YUPShortcutStartMenu" Name="YUP" Description="The player for web-based video." Icon="YUP.exe" IconIndex="0" Directory="ProgramMenuDir" WorkingDirectory="INSTALLLOCATION" Advertise="yes" />
+              <Shortcut Id="YUPShortcutDesktop" Name="YUP" Description="The player for web-based video." Icon="YUP.exe" IconIndex="0" Directory="DesktopFolder" WorkingDirectory="INSTALLLOCATION" Advertise="yes" />
+
+              <RemoveFolder Id='ProgramMenuDir' Directory='ProgramMenuDir' On='uninstall' />
+              <RemoveFolder Id='CompanyMenuDir' Directory='CompanyMenuDir' On='uninstall' />
+              <RemoveFolder Id="INSTALLLOCATION" On="uninstall" />
+            </Component>
+
+            <Directory Id="Plugins" Name="Plugins">
+              <Component Id="YouTubeModule" Guid="f9abd8ff-ba40-4ea2-9063-95ccb8f6c9fe">
+                <File Id="YouTubePlugin" Name="$(var.YouTube.TargetFileName)" Source="$(var.YouTube.TargetPath)" DiskId="1"></File>
+              </Component>
+            </Directory>
+            
+				  </Directory>
+        </Directory>
+			</Directory>
+
+      <Directory Id="ProgramMenuFolder" Name="PMenu">
+        <Directory Id="CompanyMenuDir" Name="Magrathean Technologies">
+          <Directory Id="ProgramMenuDir" Name="YUP" />
+        </Directory>
+      </Directory>
+
+      <Directory Id="DesktopFolder" Name="Desktop" />
+		</Directory>
+    
+		<Feature Id="YUPCoreFeature" Title="YUP Core" Level="1" Absent="disallow">
+			<ComponentRef Id="YUPCore" Primary="yes" />
+      <ComponentRef Id="FP_AX_MSI_INSTALLER.exe" />
+      <ComponentRef Id="ISRegistryComponent" />
+		</Feature>
+
+    <Feature Id="YUMModuleYouTube" Title="YouTube Module" Level="1">
+      <ComponentRef Id="YouTubeModule"/>
+    </Feature>
+
+    <Icon Id="YUP.exe" SourceFile="$(var.YUP.TargetPath)" />
+    
+    <Property Id="ARPPRODUCTICON" Value="YUP.exe" />
+    
+    
+    <Property Id="ISACTIONPROP1" Secure="yes" />
+    <Property Id="ISACTIONPROP2" Secure="yes" />
+    <Property Id="ISACTIONPROP3" Secure="yes" />
+
+    <Upgrade Id="{42463807-970B-4257-BC95-5C348D61DF1C}">
+      <UpgradeVersion Minimum="6.0.0.0" Maximum="10.0.12.36" Property="ISACTIONPROP1" MigrateFeatures="yes" IncludeMinimum="yes" IncludeMaximum="yes" />
+    </Upgrade>
+    
+    <Upgrade Id="{91ACC36E-CB92-44F0-AF4E-0BACC033F7F1}">
+      <UpgradeVersion Maximum="10.0.12.36" Property="ISACTIONPROP3" MigrateFeatures="yes" IncludeMinimum="yes" />
+    </Upgrade>
+    
+    <Upgrade Id="{ECA98E30-EB7E-47D1-B47F-B3BEC081B7D8}">
+      <UpgradeVersion Maximum="10.0.12.36" Property="ISACTIONPROP2" MigrateFeatures="yes" IncludeMinimum="yes" />
+    </Upgrade>
+
+    <UIRef Id="WixUI_Mondo" />
+
+    <InstallExecuteSequence>
+      <RemoveExistingProducts Sequence="1410" />
+      <Custom Action="NewCustomAction1" Sequence="4045">Not Installed</Custom>
+    </InstallExecuteSequence>
+  </Product>
+</Wix>

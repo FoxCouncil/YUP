@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YUM Modules", "YUM Modules", "{1656C37D-4A46-4A7A-B8E1-1A92270F4EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YUP", "YUP\YUP.csproj", "{AEF9D20B-40CA-4A9F-85DA-1337642D4B9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YUM", "YUM\YUM\YUM.csproj", "{4ACE80F2-7EF6-4762-B26E-D4529A1604A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTube", "YUM\YUM Modules\YouTube\YouTube.csproj", "{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "YUPSetup", "YUPSetup\YUPSetup.wixproj", "{7BCFB1D7-1B57-4FE2-A87F-A0E6A2881A81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		_Final|x86 = _Final|x86
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEF9D20B-40CA-4A9F-85DA-1337642D4B9F}._Final|x86.ActiveCfg = _Final|x86
+		{AEF9D20B-40CA-4A9F-85DA-1337642D4B9F}._Final|x86.Build.0 = _Final|x86
+		{AEF9D20B-40CA-4A9F-85DA-1337642D4B9F}.Debug|x86.ActiveCfg = Debug|x86
+		{AEF9D20B-40CA-4A9F-85DA-1337642D4B9F}.Debug|x86.Build.0 = Debug|x86
+		{AEF9D20B-40CA-4A9F-85DA-1337642D4B9F}.Release|x86.ActiveCfg = Release|x86
+		{AEF9D20B-40CA-4A9F-85DA-1337642D4B9F}.Release|x86.Build.0 = Release|x86
+		{4ACE80F2-7EF6-4762-B26E-D4529A1604A1}._Final|x86.ActiveCfg = _Final|x86
+		{4ACE80F2-7EF6-4762-B26E-D4529A1604A1}._Final|x86.Build.0 = _Final|x86
+		{4ACE80F2-7EF6-4762-B26E-D4529A1604A1}.Debug|x86.ActiveCfg = Debug|x86
+		{4ACE80F2-7EF6-4762-B26E-D4529A1604A1}.Debug|x86.Build.0 = Debug|x86
+		{4ACE80F2-7EF6-4762-B26E-D4529A1604A1}.Release|x86.ActiveCfg = Release|x86
+		{4ACE80F2-7EF6-4762-B26E-D4529A1604A1}.Release|x86.Build.0 = Release|x86
+		{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B}._Final|x86.ActiveCfg = _Final|x86
+		{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B}._Final|x86.Build.0 = _Final|x86
+		{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B}.Debug|x86.ActiveCfg = Debug|x86
+		{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B}.Debug|x86.Build.0 = Debug|x86
+		{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B}.Release|x86.ActiveCfg = Release|x86
+		{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B}.Release|x86.Build.0 = Release|x86
+		{7BCFB1D7-1B57-4FE2-A87F-A0E6A2881A81}._Final|x86.ActiveCfg = Release|x86
+		{7BCFB1D7-1B57-4FE2-A87F-A0E6A2881A81}._Final|x86.Build.0 = Release|x86
+		{7BCFB1D7-1B57-4FE2-A87F-A0E6A2881A81}.Debug|x86.ActiveCfg = Debug|x86
+		{7BCFB1D7-1B57-4FE2-A87F-A0E6A2881A81}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C427CD1E-FA73-4AF3-A2DC-B06E9322A37B} = {1656C37D-4A46-4A7A-B8E1-1A92270F4EA4}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

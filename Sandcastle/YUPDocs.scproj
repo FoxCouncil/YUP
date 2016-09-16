@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Chm">
+    <PropertyGroup>
+        <Name>YUPDocs</Name>
+        <TopicStyle>prototype</TopicStyle>
+        <LanguageId>1033</LanguageId>
+    </PropertyGroup>
+    <ItemGroup>
+        <Dlls Include="C:\Users\Fox\Documents\Visual Studio 2008\Projects\YUP\YUP\bin\Debug\YUP.exe" />
+        <Comments Include="C:\Users\Fox\Documents\Visual Studio 2008\Projects\YUP\YUP\bin\Debug\YUP.XML" />
+        <Comments Include="C:\Users\Fox\Documents\Visual Studio 2008\Projects\YUP\YUP\bin\Debug\YUM.xml" />
+        <Comments Include="C:\Users\Fox\Documents\Visual Studio 2008\Projects\YUP\YUP\bin\Debug\System.Data.SQLite.xml" />
+        <Dependents Include="C:\Users\Fox\Documents\Visual Studio 2008\Projects\YUP\YUP\bin\Debug\System.Data.SQLite.dll" />
+        <Dependents Include="C:\Users\Fox\Documents\Visual Studio 2008\Projects\YUP\YUP\bin\Debug\Interop.ShockwaveFlashObjects.dll" />
+        <Dependents Include="C:\Users\Fox\Documents\Visual Studio 2008\Projects\YUP\YUP\bin\Debug\AxInterop.ShockwaveFlashObjects.dll" />
+        <Dependents Include="C:\Users\Fox\Documents\Visual Studio 2008\Projects\YUP\YUP\bin\Debug\YUM.dll" />
+    </ItemGroup>
+    <Import Project="$(DXROOT)\Examples\Generic\generic.targets" />
+</Project>
